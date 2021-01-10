@@ -1,24 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaj-74-Fdb">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oId-y7-3QF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aDa-K2-KyM">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="135.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kxs-Ii-V7C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="135.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kov-XC-2hM">
+                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="135.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uaK-hp-rVZ">
+                                                        <rect key="frame" x="278.5" y="0.0" width="135.5" height="135.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ReF-bV-MgY">
+                                                <rect key="frame" x="0.0" y="139.5" width="414" height="135"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lnU-8g-1vl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="135"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PiV-Uv-Msb">
+                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="135"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1OD-d1-SPn">
+                                                        <rect key="frame" x="278.5" y="0.0" width="135.5" height="135"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eKk-QP-xdD">
+                                                <rect key="frame" x="0.0" y="278.5" width="414" height="135.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AIF-JG-rsj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="135.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wS8-Su-cJ2">
+                                                        <rect key="frame" x="139.5" y="0.0" width="135" height="135.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ax1-1T-B9q">
+                                                        <rect key="frame" x="278.5" y="0.0" width="135.5" height="135.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gaj-74-Fdb" secondAttribute="height" multiplier="1:1" id="Dgw-mw-l8k"/>
+                                    <constraint firstItem="oId-y7-3QF" firstAttribute="top" secondItem="gaj-74-Fdb" secondAttribute="top" id="OU0-lG-vvb"/>
+                                    <constraint firstItem="oId-y7-3QF" firstAttribute="leading" secondItem="gaj-74-Fdb" secondAttribute="leading" id="cL5-Xg-qon"/>
+                                    <constraint firstItem="oId-y7-3QF" firstAttribute="centerX" secondItem="gaj-74-Fdb" secondAttribute="centerX" id="oi9-iO-SvR"/>
+                                    <constraint firstItem="oId-y7-3QF" firstAttribute="centerY" secondItem="gaj-74-Fdb" secondAttribute="centerY" id="ySe-PO-GCJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gaj-74-Fdb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="27Y-CJ-JVY"/>
+                            <constraint firstItem="gaj-74-Fdb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="319-dX-tLE"/>
+                            <constraint firstItem="gaj-74-Fdb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dPP-q8-dw9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackViewH" destination="oId-y7-3QF" id="Xd3-SI-WgZ"/>
+                        <outletCollection property="images" destination="Kxs-Ii-V7C" collectionClass="NSMutableArray" id="YuG-rb-BEY"/>
+                        <outletCollection property="images" destination="kov-XC-2hM" collectionClass="NSMutableArray" id="JNk-Il-L5D"/>
+                        <outletCollection property="images" destination="uaK-hp-rVZ" collectionClass="NSMutableArray" id="PPz-al-e6t"/>
+                        <outletCollection property="images" destination="lnU-8g-1vl" collectionClass="NSMutableArray" id="mtl-d8-2mv"/>
+                        <outletCollection property="images" destination="PiV-Uv-Msb" collectionClass="NSMutableArray" id="Dwp-x0-3EV"/>
+                        <outletCollection property="images" destination="1OD-d1-SPn" collectionClass="NSMutableArray" id="moK-be-mfL"/>
+                        <outletCollection property="images" destination="AIF-JG-rsj" collectionClass="NSMutableArray" id="KtJ-jg-QAF"/>
+                        <outletCollection property="images" destination="wS8-Su-cJ2" collectionClass="NSMutableArray" id="Qd6-ru-3Hc"/>
+                        <outletCollection property="images" destination="Ax1-1T-B9q" collectionClass="NSMutableArray" id="ymI-N6-ZHb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
