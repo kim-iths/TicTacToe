@@ -30,11 +30,13 @@ class ViewController: UIViewController {
         
     }
     
+    //called every time a tile is pressed
     @objc func imageTapped(tgr: UITapGestureRecognizer) {
         let tappedImage = tgr.view as! UIImageView
         
         round += 1
         
+        //determines which image to put in the selected tile
         if isBlue {
             tappedImage.image = UIImage(named: "o")
             isBlue = false
@@ -46,10 +48,13 @@ class ViewController: UIViewController {
         
         for combo in 0...winningCombinations.count-1 {
             
+            
+            //checks if a winning combination contains the same images
             if images?[winningCombinations[combo][0]].image == images?[winningCombinations[combo][1]].image &&  images?[winningCombinations[combo][1]].image == images?[winningCombinations[combo][2]].image {
                 
                 var winner = "none"
                 
+                //checks if that combination contains a nil image, and if so, breaks the loop
                 comboLoop: for i in 0...winningCombinations[combo].count-1 {
                     if images?[winningCombinations[combo][i]].image == nil {
                         break
@@ -60,16 +65,18 @@ class ViewController: UIViewController {
                     }
                 }
                 
+                //if a winner is present, prints the winner to the console
                 if winner != "none" {
                     print(winner + " wins! \nWinning combination: " + String(combo))
                     enableImagesInteraction(false)
                 }
-            } else if round == 9 {
+            } else if round == 9 { //if no one ends when the board is full, declare a tie
                 print("It's a tie!")
                 break
             }
         }
     }
+    
     
     func enableImagesInteraction(_ enabled: Bool){
         for i in 0...images.count-1 {
