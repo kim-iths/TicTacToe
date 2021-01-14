@@ -15,6 +15,7 @@
 		3CA22CE22593D61B00E8C54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA22CE02593D61B00E8C54F /* LaunchScreen.storyboard */; };
 		3CA22CED2593D61C00E8C54F /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22CEC2593D61C00E8C54F /* TicTacToeTests.swift */; };
 		3CA22CF82593D61C00E8C54F /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22CF72593D61C00E8C54F /* TicTacToeUITests.swift */; };
+		3CC0BCDF25B06FA400BF054F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC0BCDE25B06FA400BF054F /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3CA22CF32593D61C00E8C54F /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA22CF72593D61C00E8C54F /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		3CA22CF92593D61C00E8C54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC0BCDE25B06FA400BF054F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3CA22CD52593D61700E8C54F /* AppDelegate.swift */,
 				3CA22CD72593D61700E8C54F /* SceneDelegate.swift */,
 				3CA22CD92593D61700E8C54F /* ViewController.swift */,
+				3CC0BCDE25B06FA400BF054F /* MenuViewController.swift */,
 				3CA22CDB2593D61700E8C54F /* Main.storyboard */,
 				3CA22CDE2593D61B00E8C54F /* Assets.xcassets */,
 				3CA22CE02593D61B00E8C54F /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				3CA22CDA2593D61700E8C54F /* ViewController.swift in Sources */,
 				3CA22CD62593D61700E8C54F /* AppDelegate.swift in Sources */,
 				3CA22CD82593D61700E8C54F /* SceneDelegate.swift in Sources */,
+				3CC0BCDF25B06FA400BF054F /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
